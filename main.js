@@ -30,7 +30,7 @@ convertWordButton.addEventListener('click', () => {
     let inputTextCode = document.getElementById('codeText').value;
     let inputArrayCode = inputTextCode.split(',');
     for (i = 0; i < inputArrayCode.length; i++) {
-    let stringBuilder = String.fromCharCode(inputArray[i]);
+    let stringBuilder = String.fromCharCode(inputArrayCode[i]);
     printToDom(stringBuilder, 'wordString')
     }}
 )
