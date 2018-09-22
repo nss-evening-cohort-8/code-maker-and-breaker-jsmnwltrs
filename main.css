@@ -1,0 +1,11 @@
+body {
+    background-image: url(yogurtcat.png);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-color: gray;
+}
+
+#wordString, #codeString {
+    color: white;
+    font-size: 25px;
+}
