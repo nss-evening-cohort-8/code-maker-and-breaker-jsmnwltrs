@@ -7,30 +7,22 @@ const printToDom = (domString, divId) => {
 
 let index = 0;
 
-// let inputText = document.getElementById('wordText').value;
-// let inputArray = inputText.split('');
-
-// let inputTextCode = document.getElementById('codeText').value;
-// let inputArrayCode = inputTextCode.split(',');
-
-// inputArray.forEach(function(element){
-//     console.log(element);
-// })
-
 convertCodeButton.addEventListener('click', () => {
+    document.getElementById('codeString').innerHTML = '';
     let inputText = document.getElementById('wordText').value;
     let inputArray = inputText.split('');
     for (i = 0; i < inputArray.length; i++) {
-    let stringBuilder = inputArray[i].charCodeAt(index) + ",";
-    printToDom(stringBuilder, 'codeString')
+    let outputStringCode = inputArray[i].charCodeAt(index) + ",";
+    printToDom(outputStringCode, 'codeString')
     }}
 )
 
 convertWordButton.addEventListener('click', () => {
+    document.getElementById('wordString').innerHTML = '';
     let inputTextCode = document.getElementById('codeText').value;
     let inputArrayCode = inputTextCode.split(',');
     for (i = 0; i < inputArrayCode.length; i++) {
-    let stringBuilder = String.fromCharCode(inputArrayCode[i]);
-    printToDom(stringBuilder, 'wordString')
+    let outputStringWord = String.fromCharCode(inputArrayCode[i]);
+    printToDom(outputStringWord, 'wordString')
     }}
 )
